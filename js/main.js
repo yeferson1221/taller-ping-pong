@@ -2,18 +2,23 @@ import { data } from "./data.js"
 
 
 const container = document.querySelector(".container");
+container.classList.add("container-lg", "d-flex", "justify-content-center", "align-items-center", "bg-muted");
 const nombre = document.createElement("input");
 nombre.type = "text";
 nombre.id = "nombre";
 const buttonOk = document.createElement("button");
-buttonOk.classList.add("btn", "btn-success", "ms-2", "mt-5");
+buttonOk.classList.add("btn", "btn-success", "ms-2", "mt-2");
 const buttonRendirse = document.createElement("button");
+buttonRendirse.classList.add("btn", "btn-outline-danger", "btn-lg", "w-50", "ms-2", "mt-2");
 buttonOk.innerHTML = "Enviar";
-buttonRendirse.innerHTML = "Rendición";
+buttonRendirse.innerHTML = "Rendirse";
+const img = document.createElement("img");
+img.src = "/imagenes/sof.webp";
 buttonOk.onclick = () => enviar()
 buttonRendirse.onclick = () => rendirse()
 container.appendChild(nombre);
 container.appendChild(buttonOk);
+container.appendChild(img);
 let pregunta;
 const tdA = document.createElement("td");
 const tdB = document.createElement("td");
@@ -29,11 +34,14 @@ function enviar() {
 
 
 function nuevaPregunta() {
-    container.appendChild(buttonRendirse);
+    const containerPreguntas = document.createElement("div");
+    containerPreguntas.classList.add("d-flex", "flex-column", "justify-content-between", "align-items-center");
     const categoria = data[iCategoria];
     pregunta = categoria.preguntas[Math.floor(Math.random() * categoria.preguntas.length)]
-    const titulo = document.createElement("p");
+    const titulo = document.createElement("h1");
+    titulo.classList.add("h1");
     const tabla = document.createElement("table");
+    tabla.classList.add("table", "table-info", "fs-2", "w-75");
     const tr1 = document.createElement("tr");
     const tr2 = document.createElement("tr");
     tdA.textContent = `A: ${pregunta.respuestas[0].respuesta}`;
@@ -45,8 +53,8 @@ function nuevaPregunta() {
     tabla.append(tr2);
     tr2.append(tdC, tdD);
     titulo.innerHTML = pregunta.pregunta;
-    container.appendChild(titulo);
-    container.appendChild(tabla);
+    containerPreguntas.append(titulo, tabla, buttonRendirse, img);
+    container.append(containerPreguntas);
 }
 
 
@@ -75,7 +83,7 @@ function validacion(respuesta) {
             nuevaPregunta();
         } else {
             alert(`Te GANASTE, tu puntaje: ${localStorage.getItem(nombre.value)}`)
-
+            location.reload()
         }
 
     } else perdiste()
