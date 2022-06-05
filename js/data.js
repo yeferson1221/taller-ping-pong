@@ -1,5 +1,4 @@
-xport
-const data = [{
+export const data = [{
         categoria: "Matematicas",
         preguntas: [{
                 pregunta: 'La suma de 2 + 2',
@@ -26,7 +25,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: 'La resta de 10-5',
@@ -54,7 +53,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿La division de 4/2?',
@@ -82,7 +81,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿La suma de 2+8?',
@@ -110,7 +109,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿La multiplicacion de 2*10?',
@@ -138,7 +137,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             }
         ]
     },
@@ -169,7 +168,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: 'Capital de EEUU',
@@ -197,7 +196,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Capital de Brazil?',
@@ -225,7 +224,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Capital de España?',
@@ -253,7 +252,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Capital de peru?',
@@ -281,7 +280,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             }
         ]
     },
@@ -312,7 +311,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Quien pinto: "La última cena"?',
@@ -340,7 +339,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Quien pinto: "La última cena"?',
@@ -368,7 +367,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Quien pinto: "La persistencia de la memoria"?',
@@ -396,7 +395,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Quien pinto: "Mona Lisa"?',
@@ -424,7 +423,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             }
         ]
     },
@@ -455,7 +454,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Quienes eran los templarios?',
@@ -483,7 +482,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Qué inició la Segunda Guerra Mundial?',
@@ -511,7 +510,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Cómo comenzó la Primera Guerra Mundial?',
@@ -539,7 +538,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: 'En qué año descubrió Cristóbal Colón, América.',
@@ -567,7 +566,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             }
         ]
     },
@@ -598,7 +597,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: 'Autor de Don Quijote de la Mancha',
@@ -626,7 +625,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Cuál de estos personajes jamás apareció en la revista Time como "Hombre del Año?',
@@ -654,7 +653,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿Qué biblioteca conserva la colección de libros de sexo más importante del mundo?',
@@ -682,7 +681,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             },
             {
                 pregunta: '¿De qué fruta se obtiene la copra?',
@@ -710,7 +709,7 @@ const data = [{
                     },
 
                 ],
-                respondida: null
+
             }
         ]
     },
